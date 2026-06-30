@@ -143,22 +143,29 @@
   Hint: pick light backgrounds (whites/grays) and dark text colors.
 */
 
-:host.light {
-  /* TODO: change the page background to a light color */
+:host:has(.calculator.light) {
+  background: #e8e8e8;
 }
 
 .calculator.light {
-  /* TODO: change the calculator background to a light color */
+  background: #ffffff;
 }
 
 .calculator.light .display {
-  /* TODO: change the display background and text color */
+  background: #d0d0d0;
+  color: #111111;
+}
+
+.calculator.light .display .display__value {
+  color: #111111;
 }
 
 .calculator.light .btn {
-  /* TODO: change the button background and text color */
+  background: #d4d4d4;
+  color: #1a1a1a;
 }
 
 .calculator.light .btn--utility {
-  /* TODO: style the utility buttons for light mode */
+  background: #c0c0c0;
+  color: #333333;
 }
