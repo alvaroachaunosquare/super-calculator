@@ -84,3 +84,19 @@ npm run build
 ```
 
 Output goes to the `dist/` folder.
+
+---
+
+## Integration tests
+
+End-to-end integration tests use [Playwright](https://playwright.dev) and drive the real app
+in a browser (button clicks, not direct method calls). They live in `e2e/` and follow the
+Page Object Model pattern (`e2e/pages/calculator.page.ts`).
+
+```bash
+npm run e2e        # run the full suite headlessly
+npm run e2e:ui     # run with Playwright's interactive UI
+npm run e2e:headed # run with a visible browser
+```
+
+The suite starts `ng serve` automatically, so there's no need to run `npm start` first.
